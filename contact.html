@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — WebMint | Start Your Website Project</title>
+<meta name="description" content="Get in touch with WebMint by form, phone, WhatsApp, email, or Telegram to start your website project.">
+<link rel="canonical" href="https://webmint.example.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — WebMint">
+<meta property="og:description" content="Start your website project with WebMint.">
+<meta property="og:image" content="assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>(function(){var t=localStorage.getItem("webmint-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})();</script>
+</head>
+<body>
+<div id="page-loader"><div class="loader-mark"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; webmint.build()</div></div>
+<div id="site-header"></div>
+
+<main>
+  <section style="padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1 data-reveal>Let's build something.</h1>
+      <p class="hero__subhead" data-reveal>Fill in the form, or reach us directly — whichever's easier for you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+
+      <form id="contact-form" novalidate>
+        <div class="form-msg" role="status"></div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="field-name">Full name</label>
+            <input type="text" id="field-name" name="name" placeholder="Your name" required>
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="field-phone">Phone number</label>
+            <input type="tel" id="field-phone" name="phone" placeholder="+91 90000 00000" required>
+            <p class="field-error"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="field-email">Email address</label>
+            <input type="email" id="field-email" name="email" placeholder="you@business.com" required>
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="field-company">Company / business name</label>
+            <input type="text" id="field-company" name="company" placeholder="Your business name">
+            <p class="field-error"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="field-website">Current website (optional)</label>
+            <input type="url" id="field-website" name="website" placeholder="https://">
+            <p class="field-error"></p>
+          </div>
+          <div class="field">
+            <label for="field-service">Service required</label>
+            <select id="field-service" name="service" required>
+              <option value="">Choose a service…</option>
+            </select>
+            <p class="field-error"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="field-budget">Estimated budget</label>
+          <select id="field-budget" name="budget">
+            <option value="">Select a range (optional)</option>
+            <option value="Under ₹10,000">Under ₹10,000</option>
+            <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+            <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+            <option value="₹50,000+">₹50,000+</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="field-message">Tell us about your project</label>
+          <textarea id="field-message" name="message" placeholder="What does your business do, and what do you need the website to do?" required></textarea>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="field-file">Attach a file (logo, reference, brief — optional)</label>
+          <div class="field--file">
+            <input type="file" id="field-file" name="attachment" class="sr-only">
+            <span>Drag a file here, or click to browse</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Send enquiry</button>
+      </form>
+
+      <aside>
+        <div class="contact-info-card" data-reveal>
+          <h3 class="mb-2">Other ways to reach us</h3>
+          <div class="contact-info-row">
+            <div class="card__icon"><svg width="18" height="18"><use href="icons/sprite.svg#phone"></use></svg></div>
+            <div><b style="display:block; font-size:.9rem">Call or WhatsApp</b><a href="#" id="ci-phone" class="footer__contact-item" style="margin:0"></a></div>
+          </div>
+          <div class="contact-info-row">
+            <div class="card__icon"><svg width="18" height="18"><use href="icons/sprite.svg#mail"></use></svg></div>
+            <div><b style="display:block; font-size:.9rem">Email</b><a href="#" id="ci-email" class="footer__contact-item" style="margin:0"></a></div>
+          </div>
+          <div class="contact-info-row">
+            <div class="card__icon"><svg width="18" height="18"><use href="icons/sprite.svg#telegram"></use></svg></div>
+            <div><b style="display:block; font-size:.9rem">Telegram</b><a href="#" id="ci-telegram" class="footer__contact-item" style="margin:0" target="_blank" rel="noopener"></a></div>
+          </div>
+          <div class="contact-info-row">
+            <div class="card__icon"><svg width="18" height="18"><use href="icons/sprite.svg#layout"></use></svg></div>
+            <div><b style="display:block; font-size:.9rem">Location</b><span id="ci-address" class="footer__contact-item" style="margin:0"></span></div>
+          </div>
+          <div class="contact-info-row">
+            <div class="card__icon"><svg width="18" height="18"><use href="icons/sprite.svg#refresh"></use></svg></div>
+            <div><b style="display:block; font-size:.9rem">Hours</b><span id="ci-hours" class="footer__contact-item" style="margin:0"></span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/contact.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var cfg = window.SITE_CONFIG;
+    var p = document.getElementById("ci-phone"); if (p) { p.href = "tel:" + cfg.contact.phoneRaw; p.textContent = cfg.contact.phoneDisplay; }
+    var e = document.getElementById("ci-email"); if (e) { e.href = "mailto:" + cfg.contact.email; e.textContent = cfg.contact.email; }
+    var t = document.getElementById("ci-telegram"); if (t) { t.href = cfg.contact.telegramUrl; t.textContent = "@iyogeshjat"; }
+    var a = document.getElementById("ci-address"); if (a) a.textContent = cfg.contact.address;
+    var h = document.getElementById("ci-hours"); if (h) h.textContent = cfg.hours.weekdays;
+  });
+</script>
+</body>
+</html>
