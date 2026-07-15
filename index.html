@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebMint â€” Websites, Built Fresh | Web Design Studio</title>
+<meta name="description" content="WebMint designs and builds fast, modern websites for small businesses and startups. Custom design, mobile-first, and easy to maintain â€” from â‚¹4,999.">
+<link rel="canonical" href="https://webmint.example.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebMint â€” Websites, Built Fresh">
+<meta property="og:description" content="A web design studio building fast, modern, easy-to-maintain websites for small businesses.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:url" content="https://webmint.example.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WebMint â€” Websites, Built Fresh">
+<meta name="twitter:description" content="A web design studio building fast, modern, easy-to-maintain websites for small businesses.">
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>
+  (function(){ var t = localStorage.getItem("webmint-theme"); if (t === "light") document.documentElement.setAttribute("data-theme","light"); })();
+</script>
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-mark"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; webmint.build()</div></div>
+
+<div id="site-header"></div>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="eyebrow" id="hero-eyebrow">Web design & development studio</span>
+        <h1 class="hero__headline" id="hero-headline">Fast, clean websites for brands that mean business.</h1>
+        <p class="hero__subhead" id="hero-subhead">WebMint designs and builds premium websites for small businesses and startups.</p>
+        <div class="hero__ctas">
+          <a href="contact.html" class="btn btn--primary btn--lg" id="hero-cta-primary">Start a project</a>
+          <a href="portfolio.html" class="btn btn--ghost btn--lg" id="hero-cta-secondary">See our work</a>
+        </div>
+        <div class="hero__stats" id="hero-stats"></div>
+      </div>
+      <div class="hero__terminal-wrap">
+        <div class="terminal">
+          <div class="terminal__bar"><span></span><span></span><span></span><span class="terminal__title">webmint â€” build.sh</span></div>
+          <div class="terminal__body" id="terminal-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="logos-strip">
+    <div class="wrap logos-strip__inner">
+      <span>Trusted by local businesses</span>
+      <span>Gaming Lounges</span>
+      <span>Salons & Studios</span>
+      <span>Restaurants</span>
+      <span>Retail</span>
+      <span>Fitness</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Everything a modern website needs, nothing it doesn't.</h2>
+        <p>From a single landing page to a full online store, every project is built around your business, not a template.</p>
+      </div>
+      <div class="grid grid--3" data-render="services" data-limit="6"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Recent work</span>
+        <h2>A few sites we've shipped recently.</h2>
+        <p>Real projects for real local businesses â€” see the full portfolio for more.</p>
+      </div>
+      <div class="grid grid--3" data-render="portfolio" data-limit="3"></div>
+      <p class="text-center mt-2"><a href="portfolio.html" class="btn btn--ghost">View full portfolio</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Client feedback</span>
+        <h2>What business owners say after launch.</h2>
+      </div>
+      <div class="grid grid--4" data-render="testimonials"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Common questions</span>
+        <h2>Frequently asked questions.</h2>
+      </div>
+      <div id="faq-preview"></div>
+      <p class="text-center mt-2"><a href="faq.html" class="btn btn--ghost">See all FAQs</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band" data-reveal>
+        <h2>Ready to give your business a website it deserves?</h2>
+        <p>Tell us a bit about your business and we'll send back a simple proposal â€” no pressure, no jargon.</p>
+        <a href="contact.html" class="btn btn--primary btn--lg">Start a project</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/faq.js"></script>
+</body>
+</html>
